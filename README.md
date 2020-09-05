@@ -9,7 +9,8 @@ TestNG - For testreports
 Jenkins - intergration tools
  
  
-To run the package directly clone the git repository of above link to Jenkins localhost.
+To run the package
+-  directly clone the git repository of above link to Jenkins localhost.
  - Define the environmenatal path of apache-maven-3.6.3 if you dowload the file, unzip it  and run in command prompt 
  mvn compile  //after opening the path of stored folder compile the project
  mvn test
