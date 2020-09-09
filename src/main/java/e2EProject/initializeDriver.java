@@ -20,7 +20,7 @@ public class initializeDriver {
 		// TODO Auto-generated method stub
 		
 		prop=new Properties();
-		FileInputStream fis= new FileInputStream("C:\\Users\\Ar_Richya\\eclipse-workspaceNew\\Testing Project\\data.properties");
+		FileInputStream fis= new FileInputStream(System.getProperty ("user.dir")+"\\src\\main\\java\\resources\\data.properties");;
 		prop.load(fis); //load takes fis as argument 
 	 	
 		//for browser 
@@ -30,7 +30,7 @@ public class initializeDriver {
 	   if (browserName.equals("chrome"))
 	{
 		//execute in chrome driver
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Ar_Richya\\Downloads\\Webapplication_Test-master\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty ("user.dir")+"\\src\\main\\java\\resources\\chromedriver.exe");
 		 driver= new ChromeDriver (); 
 	}
 	else if (browserName.equals("firefox"))
